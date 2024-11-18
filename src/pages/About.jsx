@@ -1,6 +1,5 @@
 import "./About.css";
-import boysHostel from "./assets/boysHostel.jpg";
-import girlsHostel from "./assets/nature.jpg";
+import boysHostel from "../assets/boysHostel.jpg";
 
 const sections = [
   {
