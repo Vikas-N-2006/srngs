@@ -23,7 +23,7 @@ const sections = [
   {
     title: "SRNG Sampannappa Girls Hostel",
     content: `The Trustees have embarked on a project to start a free hostel for girls with a total project outlay of Rs. 10 Crores. Two sites measuring 8000 sq.ft. with buildings have been purchased in Girinagar, Bengaluru, to house the Girls Hostel. Efforts are underway to begin operations in the academic year 2019-20.`,
-    image: girlsHostel,
+    image: "https://via.placeholder.com/400x300?text=Girls+hostel",
   },
 ];
 
