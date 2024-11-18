@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+body {
+  background-color: #f0f4f8;
+  color: #2d3748;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.about-title {
+  text-align: center;
+  color: #2c5282;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #4299e1;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.section {
+  margin-bottom: 3rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.section-title {
+  padding: 1rem;
+  margin: 0;
+  font-size: 1.5rem;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.section-even .section-title {
+  /* background-color: #1f2937; */
+  color: #1f2937;
+}
+
+.section-odd .section-title {
+  /* background-color: #1f2937; */
+  color: #1f2937;
+}
+
+.content-with-image {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 2rem;
+}
+
+.image-left {
+  flex-direction: row-reverse;
+}
+
+.content {
+  flex: 1;
+  padding: 0 2rem;
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.section-image:hover {
+  transform: scale(1.05);
+}
+
+.content p {
+  text-align: justify;
+  color: #4a5568;
+}
+
+@media (max-width: 768px) {
+  .content-with-image {
+    flex-direction: column;
+  }
+
+  .image-left {
+    flex-direction: column;
+  }
+
+  .content {
+    padding: 1rem 0;
+  }
+
+  .image-container {
+    margin-top: 1rem;
+  }
+}
+
+/* Accessibility improvements */
+.section-title,
+.content p {
+  max-width: 65ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Additional visual enhancements */
+.about-container::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(49, 130, 206, 0.1),
+    rgba(56, 161, 105, 0.1)
+  );
+  z-index: -1;
+}
+
+/* Smooth scrolling for the whole page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Focus styles for accessibility */
+:focus {
+  outline: 2px solid #3182ce;
+  outline-offset: 2px;
+}
+.underline {
+  font-style: bold;
+  text-decoration: none;
+}
+
+.section-title {
+  text-align: center;
+  padding: 1rem;
+  margin: 0;
+  font-size: 1.5rem;
+  color: #1f2937;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  position: relative;
+  display: inline-block;
+}
+
+/* Underline effect on hover */
+.section-title::after {
+  text-align: center;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #3182ce;
+  transition: width 0.3s ease;
+}
+
+.section-title:hover::after {
+  text-align: center;
+  width: 100%;
+}

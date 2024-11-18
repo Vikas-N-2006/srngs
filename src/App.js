@@ -4,7 +4,6 @@ import { Home, About, Error } from "./pages";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Sports from "./pages/Sports";
 
-
 function App() {
   const router = createBrowserRouter([
     {
